@@ -1,0 +1,7 @@
+# Sent to Carla
+
+## Low Hanging Fruits to Increase the Reproducibility of Your Research
+
+### Abstract
+
+Reproducibility, i.e. the ability to recreate reported results using the same data and analysis, constitutes a core principle of scientific inquiry, enabling the verification, error detection, and cumulative advancement of knowledge. What sounds self-evident stands in stark contrast to current practice: educational research faces persistent reproducibility challenges when essential research materials remain inaccessible or inadequately documented. This methods chat addresses reproducibility through two interconnected practices: reproducible reporting and FAIR management of materials. Reproducible reporting, implemented through literate programming approaches like Quarto (or jamovi/ JASP as an alternative), enables researchers to document their complete analytical workflow—from raw data through final results—in human-readable and executable formats. FAIR principles (Findable, Accessible, Interoperable, Reusable) establish systematic standards for research management that facilitate long-term reuse by both human researchers and computational systems. Together, these practices transform reproducibility from an aspirational ideal into a concrete, implementable standard. The methods chat discusses low hanging fruits for implementation, addresses common concerns about resource constraints and competitive pressures, and demonstrates how reproducible practices strengthen rather than burden the research process in educational science.

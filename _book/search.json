@@ -1,0 +1,303 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "reproduce2",
+    "section": "",
+    "text": "1 Sent to Carla"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "2  Slides",
+    "section": "",
+    "text": "3 Reproducible Reporting"
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "intro.html#why-reproducibility-matters",
+    "href": "intro.html#why-reproducibility-matters",
+    "title": "2  Slides",
+    "section": "2.1 Why Reproducibility Matters",
+    "text": "2.1 Why Reproducibility Matters\nScience builds on itself: - Verification of findings - Error detection and correction - Learning from previous work - Cumulative knowledge advancement\nWithout reproducibility → No science\n\nReproducibility is not an add-on feature but the core mechanism that makes science self-correcting"
+  },
+  {
+    "objectID": "intro.html#the-reproducibility-problem",
+    "href": "intro.html#the-reproducibility-problem",
+    "title": "2  Slides",
+    "section": "2.2 The Reproducibility Problem",
+    "text": "2.2 The Reproducibility Problem\nCurrent reality in research: - Core elements remain unpublished (data, code, materials) - Published articles alone cannot enable reproduction - Meta-scientific studies show low reproducibility rates - This fundamentally undermines cumulative science"
+  },
+  {
+    "objectID": "intro.html#what-is-reproducibility",
+    "href": "intro.html#what-is-reproducibility",
+    "title": "2  Slides",
+    "section": "2.3 What is Reproducibility?",
+    "text": "2.3 What is Reproducibility?\nKey distinction:\n\n\n\n\nSame Data\nDifferent Data\n\n\n\n\nSame Analysis\nReproducible\nReplicable\n\n\nDifferent Analysis\nRobust\nGeneralizable\n\n\n\nToday’s focus: Making our work reproducible"
+  },
+  {
+    "objectID": "intro.html#two-interconnected-practices",
+    "href": "intro.html#two-interconnected-practices",
+    "title": "2  Slides",
+    "section": "2.4 Two Interconnected Practices",
+    "text": "2.4 Two Interconnected Practices\n\nReproducible Reporting\n\nDocument the complete analytical workflow\nMake every step traceable and executable\n\nFAIR Data Management\n\nEnsure research products can be found and reused\nSystematic framework for long-term accessibility"
+  },
+  {
+    "objectID": "intro.html#reproducibility-as-core-practice",
+    "href": "intro.html#reproducibility-as-core-practice",
+    "title": "2  Slides",
+    "section": "2.5 Reproducibility as Core Practice",
+    "text": "2.5 Reproducibility as Core Practice\nNot an optional extra, but: - Enables scientific verification - Facilitates error detection - Allows learning from publications - Strengthens cumulative knowledge\nQuestion: How do we make this practical?"
+  },
+  {
+    "objectID": "intro.html#the-current-problem",
+    "href": "intro.html#the-current-problem",
+    "title": "2  Slides",
+    "section": "3.1 The Current Problem",
+    "text": "3.1 The Current Problem\nExample: “A confirmatory factor analysis provided evidence for the proposed two-dimensional structure (CFI = .956, TLI = .955, SRMR = .047)”\nCan you reproduce this? - Which measurement model? - Which estimator? - How were missing values handled? - Where is the data?\n→ Impossible without code and data"
+  },
+  {
+    "objectID": "intro.html#evidence-reproducibility-is-rare",
+    "href": "intro.html#evidence-reproducibility-is-rare",
+    "title": "2  Slides",
+    "section": "3.2 Evidence: Reproducibility is Rare",
+    "text": "3.2 Evidence: Reproducibility is Rare\nEmpirical studies show low reproducibility:\n\nAdd studies from repo comp-repro!!!\n\n\nPsychology (Hardwicke et al. 2018, 2021): Difficulties reproducing published analyses even with open data\nEconomics (Chang & Li 2015): Problems reproducing results from published papers\nPolitical Science (Eubank 2016): Challenges in replication attempts\n\nCommon barriers: Missing code, incomplete data documentation, unclear analytical steps"
+  },
+  {
+    "objectID": "intro.html#the-solution-add-code-and-data",
+    "href": "intro.html#the-solution-add-code-and-data",
+    "title": "2  Slides",
+    "section": "3.3 The Solution: Add Code and Data",
+    "text": "3.3 The Solution: Add Code and Data\nPeng (2011): Publication becomes reproducible when researchers provide: 1. The data used 2. The analysis code\nBut this alone is often not enough…"
+  },
+  {
+    "objectID": "intro.html#beyond-code-and-data",
+    "href": "intro.html#beyond-code-and-data",
+    "title": "2  Slides",
+    "section": "3.4 Beyond Code and Data",
+    "text": "3.4 Beyond Code and Data\nRemaining challenges:\n\nWhich code file on which data in which order?\nSoftware version differences\nOperating system dependencies\nPackage version conflicts\n\nEducational research: Often multi-step procedures with various software packages"
+  },
+  {
+    "objectID": "intro.html#the-reproducibility-spectrum",
+    "href": "intro.html#the-reproducibility-spectrum",
+    "title": "2  Slides",
+    "section": "3.5 The Reproducibility Spectrum",
+    "text": "3.5 The Reproducibility Spectrum\nNot reproducible ←―――――――――――――→ Gold standard\n\nPublication only\nPublication + Code\nPublication + Code and Data\nLinked, executable code and data\nIsolated computational environment (Docker, Binder, Quarto-live)"
+  },
+  {
+    "objectID": "intro.html#literate-programming-the-key",
+    "href": "intro.html#literate-programming-the-key",
+    "title": "2  Slides",
+    "section": "3.6 Literate Programming: The Key",
+    "text": "3.6 Literate Programming: The Key\nConcept by Knuth (1984): - Interweaving natural language and code - Human-readable documentation - Code, output, and narrative in one document\nModern implementation: - Quarto - R Markdown - Jupyter Notebooks"
+  },
+  {
+    "objectID": "intro.html#example-quarto-document",
+    "href": "intro.html#example-quarto-document",
+    "title": "2  Slides",
+    "section": "3.7 Example: Quarto Document",
+    "text": "3.7 Example: Quarto Document\nLeft side: Markdown + Code blocks\nRight side: Rendered document\n\nDirect traceability from text to computation\nEvery coefficient traceable to its calculation\nAutomatic documentation of analytical decisions\nOutput in .docx, .pdf, .html, and more"
+  },
+  {
+    "objectID": "intro.html#benefits-of-reproducible-reporting",
+    "href": "intro.html#benefits-of-reproducible-reporting",
+    "title": "2  Slides",
+    "section": "3.8 Benefits of Reproducible Reporting",
+    "text": "3.8 Benefits of Reproducible Reporting\nFor science: - Error detection by reviewers and readers - Learning from methodological details - Building on previous work\nFor you: - Better organized workflow - Easier to revise analyses - Documented decisions for future reference - Facilitates collaboration"
+  },
+  {
+    "objectID": "intro.html#computational-reproducibility",
+    "href": "intro.html#computational-reproducibility",
+    "title": "2  Slides",
+    "section": "3.9 Computational Reproducibility",
+    "text": "3.9 Computational Reproducibility\nProblem: Different software versions, operating systems\nSolutions:\n\nBasic: Provide code + data + session info\nBetter: Use package management (renv, conda)\nBest: Containerization (Docker) or web-based execution (Quarto-live)"
+  },
+  {
+    "objectID": "intro.html#quarto-live-full-reproducibility",
+    "href": "intro.html#quarto-live-full-reproducibility",
+    "title": "2  Slides",
+    "section": "3.10 Quarto-Live: Full Reproducibility",
+    "text": "3.10 Quarto-Live: Full Reproducibility\nThree lines of code change:\nformat: live-html\nengine: knitr\nResult: - Completely isolated computational environment - Accessible via browser - Executable via WebAssembly - No software installation needed - No version conflicts possible"
+  },
+  {
+    "objectID": "intro.html#reproducibility-requires-access",
+    "href": "intro.html#reproducibility-requires-access",
+    "title": "2  Slides",
+    "section": "4.1 Reproducibility Requires Access",
+    "text": "4.1 Reproducibility Requires Access"
+  },
+  {
+    "objectID": "intro.html#reproducibility-enables-cumulative-science",
+    "href": "intro.html#reproducibility-enables-cumulative-science",
+    "title": "2  Slides",
+    "section": "4.2 Reproducibility Enables Cumulative Science",
+    "text": "4.2 Reproducibility Enables Cumulative Science\nScience is fundamentally cumulative (Merton 1973):\n\nVerification: Can we reproduce the finding?\nExtension: Can we build on this work?\nIntegration: Can we combine multiple studies?\n\nEach step requires: - Access to materials - Understanding of methods - Ability to reuse data and code"
+  },
+  {
+    "objectID": "intro.html#the-cost-of-non-reproducibility",
+    "href": "intro.html#the-cost-of-non-reproducibility",
+    "title": "2  Slides",
+    "section": "4.3 The Cost of Non-Reproducibility",
+    "text": "4.3 The Cost of Non-Reproducibility\nArtner et al. (2021) reproduction study: - Attempted to reproduce 232 statistical claims from 46 articles - Investment: 280 person-days of work - Success rate: Only 70%\nTheir conclusion: “Vagueness makes assessing reproducibility a nightmare”\nThe problem: Inadequate documentation and data management"
+  },
+  {
+    "objectID": "intro.html#fair-as-systematic-solution",
+    "href": "intro.html#fair-as-systematic-solution",
+    "title": "2  Slides",
+    "section": "4.4 FAIR as Systematic Solution",
+    "text": "4.4 FAIR as Systematic Solution\nFAIR Principles provide structure for: - Making research products discoverable - Ensuring long-term accessibility - Enabling technical compatibility - Supporting informed reuse\nNot just “making data available” but making it systematically reusable"
+  },
+  {
+    "objectID": "intro.html#from-reproducible-to-reusable",
+    "href": "intro.html#from-reproducible-to-reusable",
+    "title": "2  Slides",
+    "section": "4.5 From Reproducible to Reusable",
+    "text": "4.5 From Reproducible to Reusable\nReproducible reporting solves one problem: - “Can I recreate your results with your data and code?”\nBut another problem remains: - “Can I actually find and access your data and code?” - “Can I understand what your data contains?” - “Can I legally and practically reuse your materials?”\n→ FAIR principles address these questions"
+  },
+  {
+    "objectID": "intro.html#why-fair-matters-for-reproducibility",
+    "href": "intro.html#why-fair-matters-for-reproducibility",
+    "title": "2  Slides",
+    "section": "4.6 Why FAIR Matters for Reproducibility",
+    "text": "4.6 Why FAIR Matters for Reproducibility\nReal examples of reproducibility barriers:\n\nStimulus materials posted but copyright unclear → Cannot reuse\nData available but no codebook → Cannot understand variables\nReferenced data links broken → Cannot access\nAuthors left institution → Cannot locate materials\n\nAvailability alone ≠ Reproducibility"
+  },
+  {
+    "objectID": "intro.html#fair-principles",
+    "href": "intro.html#fair-principles",
+    "title": "2  Slides",
+    "section": "4.7 FAIR Principles",
+    "text": "4.7 FAIR Principles\n\nFindable\nAccessible\nInteroperable\nReusable\n\nFramework for systematic practices that enable reuse"
+  },
+  {
+    "objectID": "intro.html#fair-open",
+    "href": "intro.html#fair-open",
+    "title": "2  Slides",
+    "section": "4.8 FAIR ≠ Open",
+    "text": "4.8 FAIR ≠ Open\n\nFAIR does not necessarily mean “freely accessible”\nParticularly relevant for vulnerable populations\nMetadata remain publicly accessible\nAccess path transparently documented\n\nPrinciple: “As open as possible, as closed as necessary”"
+  },
+  {
+    "objectID": "intro.html#empirical-evidence-for-fair",
+    "href": "intro.html#empirical-evidence-for-fair",
+    "title": "2  Slides",
+    "section": "4.9 Empirical Evidence for FAIR",
+    "text": "4.9 Empirical Evidence for FAIR\nHealth research (Martínez-García et al. 2023): - 56.6% time savings in research data management - Monthly savings: €16,800\nReproducibility study (Artner et al. 2021): - 232 statistical claims from 46 articles - 280 person-days of work - Only 70% successfully reproduced"
+  },
+  {
+    "objectID": "intro.html#f---findable",
+    "href": "intro.html#f---findable",
+    "title": "2  Slides",
+    "section": "4.10 F - Findable",
+    "text": "4.10 F - Findable\nComponents:\n\nPersistent, unique identifiers (DOIs)\nRich metadata\nIndexing in searchable databases\n\nRepositories: - Zenodo.org - OSF.io - Research data centers (e.g., Verbund FDB)"
+  },
+  {
+    "objectID": "intro.html#a---accessible",
+    "href": "intro.html#a---accessible",
+    "title": "2  Slides",
+    "section": "4.11 A - Accessible",
+    "text": "4.11 A - Accessible\nGradations:\n\nFreely available research products\nControlled access (private repositories)\nRegulated access via research data centers\n\nImportant: Transparent documentation of access path"
+  },
+  {
+    "objectID": "intro.html#i---interoperable",
+    "href": "intro.html#i---interoperable",
+    "title": "2  Slides",
+    "section": "4.12 I - Interoperable",
+    "text": "4.12 I - Interoperable\nUse of standardized, open formats:\n\nData: CSV with codebook, labeled .Rdata\nCode: R, Python (not MPlus, STATA)\nAvoiding proprietary software\n\nAlternative open-source software: - Jamovi, JASP (instead of SPSS)"
+  },
+  {
+    "objectID": "intro.html#r---reusable",
+    "href": "intro.html#r---reusable",
+    "title": "2  Slides",
+    "section": "4.13 R - Reusable",
+    "text": "4.13 R - Reusable\nComprehensive documentation:\n\nCodebooks for each variable\nREADME files\nTerms of use and licensing information (CC0, CC-BY, CC-BY-SA)\nResearch context and framework\nData quality issues\n\nStandards: PSYCH-DS for psychological data"
+  },
+  {
+    "objectID": "intro.html#fair-in-educational-research",
+    "href": "intro.html#fair-in-educational-research",
+    "title": "2  Slides",
+    "section": "4.14 FAIR in Educational Research",
+    "text": "4.14 FAIR in Educational Research\nGood examples: - National Educational Panel Study (NEPS) - PISA - PIRLS\nChallenge: Scalable approaches for smaller projects with limited resources"
+  },
+  {
+    "objectID": "intro.html#frequently-asked-questions",
+    "href": "intro.html#frequently-asked-questions",
+    "title": "2  Slides",
+    "section": "4.15 Frequently Asked Questions",
+    "text": "4.15 Frequently Asked Questions"
+  },
+  {
+    "objectID": "intro.html#reproducibility-sounds-time-consuming",
+    "href": "intro.html#reproducibility-sounds-time-consuming",
+    "title": "2  Slides",
+    "section": "4.16 “Reproducibility sounds time-consuming”",
+    "text": "4.16 “Reproducibility sounds time-consuming”\nAnswer:\nInitial investment: Yes, there’s a learning curve\nLong-term benefits: - Faster revisions (code is already there) - Easier collaboration (others can understand your work) - Better organized workflow - More citations and trust\nThink incremental: Start small, improve gradually"
+  },
+  {
+    "objectID": "intro.html#my-code-is-messy-and-embarrassing",
+    "href": "intro.html#my-code-is-messy-and-embarrassing",
+    "title": "2  Slides",
+    "section": "4.17 “My code is messy and embarrassing”",
+    "text": "4.17 “My code is messy and embarrassing”\nAnswer:\nThe paradox of open code: 1. Knowing others will see it → You write better code 2. Better code → Less error-prone, better documented 3. Better documentation → Others can learn from it\nPerfect is the enemy of good: Imperfect but documented code &gt; No code at all"
+  },
+  {
+    "objectID": "intro.html#what-about-proprietarysensitive-data",
+    "href": "intro.html#what-about-proprietarysensitive-data",
+    "title": "2  Slides",
+    "section": "4.18 “What about proprietary/sensitive data?”",
+    "text": "4.18 “What about proprietary/sensitive data?”\nAnswer:\nFAIR ≠ Open: - Metadata can be public even if data isn’t - Controlled access is still FAIR - Document access procedures transparently\nFor educational research: - “As open as possible, as closed as necessary” - Research data centers provide secure solutions - Synthetic data for methods illustration"
+  },
+  {
+    "objectID": "intro.html#ill-be-scooped",
+    "href": "intro.html#ill-be-scooped",
+    "title": "2  Slides",
+    "section": "4.19 “I’ll be scooped!”",
+    "text": "4.19 “I’ll be scooped!”\nAnswer:\nYour advantages persist: - Deep knowledge of your data and design - First-mover advantage in publication - Invitations to collaborate on reuse\nReframing: - Reuse = validation of your work - Citations from secondary analyses - Broader impact of your research\nScience as common good: Collective progress benefits everyone"
+  },
+  {
+    "objectID": "intro.html#conclusion",
+    "href": "intro.html#conclusion",
+    "title": "2  Slides",
+    "section": "4.20 Conclusion",
+    "text": "4.20 Conclusion\nReproducibility is not optional—it’s core to science: - Verification of findings - Error detection and correction - Cumulative knowledge building\nTwo practical approaches:\n\nReproducible Reporting → Document your complete workflow\nFAIR Data Management → Enable systematic reuse\n\nResult: Stronger, more credible, more impactful research"
+  },
+  {
+    "objectID": "intro.html#take-home-message",
+    "href": "intro.html#take-home-message",
+    "title": "2  Slides",
+    "section": "4.21 Take-Home Message",
+    "text": "4.21 Take-Home Message\nReproducibility means:\n\nPublishing isn’t complete without data and code\nDocumentation is as important as analysis\nFAIR principles make reuse systematic, not accidental\n\nStart today: - Try literate programming for your next analysis - Deposit your next dataset with a DOI - Document one more step than you did last time\nPerfect is the enemy of good—begin somewhere! 💪"
+  },
+  {
+    "objectID": "intro.html#thank-you-for-your-attention",
+    "href": "intro.html#thank-you-for-your-attention",
+    "title": "2  Slides",
+    "section": "4.22 Thank You for Your Attention!",
+    "text": "4.22 Thank You for Your Attention!\nQuestions?"
+  },
+  {
+    "objectID": "intro.html#key-references",
+    "href": "intro.html#key-references",
+    "title": "2  Slides",
+    "section": "4.23 Key References",
+    "text": "4.23 Key References\n\nArtner et al. (2021). The reproducibility of statistical results in psychological research. Psychological Methods.\nPeng (2011). Reproducible research in computing science. Science.\nWilkinson et al. (2016). The FAIR Guiding Principles. Scientific Data.\nHardwicke et al. (2018, 2021). Data availability and analytic reproducibility studies. Royal Society Open Science.\n\nComplete reference list available in the paper."
+  },
+  {
+    "objectID": "index.html#low-hanging-fruits-to-increase-the-reproducibility-of-your-research",
+    "href": "index.html#low-hanging-fruits-to-increase-the-reproducibility-of-your-research",
+    "title": "reproduce2",
+    "section": "1.1 Low Hanging Fruits to Increase the Reproducibility of Your Research",
+    "text": "1.1 Low Hanging Fruits to Increase the Reproducibility of Your Research\n\n1.1.1 Abstract\nReproducibility, i.e. the ability to recreate reported results using the same data and analysis, constitutes a core principle of scientific inquiry, enabling the verification, error detection, and cumulative advancement of knowledge. What sounds self-evident stands in stark contrast to current practice: educational research faces persistent reproducibility challenges when essential research materials remain inaccessible or inadequately documented. This methods chat addresses reproducibility through two interconnected practices: reproducible reporting and FAIR management of materials. Reproducible reporting, implemented through literate programming approaches like Quarto (or jamovi/ JASP as an alternative), enables researchers to document their complete analytical workflow—from raw data through final results—in human-readable and executable formats. FAIR principles (Findable, Accessible, Interoperable, Reusable) establish systematic standards for research management that facilitate long-term reuse by both human researchers and computational systems. Together, these practices transform reproducibility from an aspirational ideal into a concrete, implementable standard. The methods chat discusses low hanging fruits for implementation, addresses common concerns about resource constraints and competitive pressures, and demonstrates how reproducible practices strengthen rather than burden the research process in educational science."
+  }
+]

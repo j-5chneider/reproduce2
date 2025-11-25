@@ -1,0 +1,493 @@
+# Slides
+
+## Why Reproducibility Matters
+
+**Science builds on itself:**
+- Verification of findings
+- Error detection and correction
+- Learning from previous work
+- Cumulative knowledge advancement
+
+**Without reproducibility → No science**
+
+::: {.notes}
+Reproducibility is not an add-on feature but the core mechanism that makes science self-correcting
+:::
+
+---
+
+## The Reproducibility Problem
+
+**Current reality in research:**
+- Core elements remain unpublished (data, code, materials)
+- Published articles alone cannot enable reproduction
+- Meta-scientific studies show low reproducibility rates
+- This fundamentally undermines cumulative science
+
+---
+
+## What is Reproducibility?
+
+**Key distinction:**
+
+|  | Same Data | Different Data |
+|---|---|---|
+| **Same Analysis** | **Reproducible** | Replicable |
+| **Different Analysis** | Robust | Generalizable |
+
+**Today's focus:** Making our work reproducible
+
+---
+
+## Two Interconnected Practices
+
+1. **Reproducible Reporting**
+   - Document the complete analytical workflow
+   - Make every step traceable and executable
+
+2. **FAIR Data Management**
+   - Ensure research products can be found and reused
+   - Systematic framework for long-term accessibility
+
+---
+
+## Reproducibility as Core Practice
+
+**Not an optional extra, but:**
+- Enables scientific verification
+- Facilitates error detection
+- Allows learning from publications
+- Strengthens cumulative knowledge
+
+**Question:** How do we make this practical?
+
+---
+
+# Reproducible Reporting
+
+---
+
+## The Current Problem
+
+Example: "A confirmatory factor analysis provided evidence for the proposed two-dimensional structure (CFI = .956, TLI = .955, SRMR = .047)"
+
+**Can you reproduce this?**
+- Which measurement model?
+- Which estimator?
+- How were missing values handled?
+- Where is the data?
+
+**→ Impossible without code and data**
+
+---
+
+## Evidence: Reproducibility is Rare
+
+**Empirical studies show low reproducibility:**
+
+> **Add studies from repo comp-repro!!!**
+
+- **Psychology** (Hardwicke et al. 2018, 2021): Difficulties reproducing published analyses even with open data
+- **Economics** (Chang & Li 2015): Problems reproducing results from published papers
+- **Political Science** (Eubank 2016): Challenges in replication attempts
+
+**Common barriers:** Missing code, incomplete data documentation, unclear analytical steps
+
+---
+
+## The Solution: Add Code and Data
+
+**Peng (2011):** Publication becomes reproducible when researchers provide:
+1. The data used
+2. The analysis code
+
+**But this alone is often not enough...**
+
+---
+
+## Beyond Code and Data
+
+**Remaining challenges:**
+
+- Which code file on which data in which order?
+- Software version differences
+- Operating system dependencies
+- Package version conflicts
+
+**Educational research:** Often multi-step procedures with various software packages
+
+---
+
+## The Reproducibility Spectrum
+
+```
+Not reproducible ←―――――――――――――→ Gold standard
+```
+
+1. Publication only
+2. Publication + Code
+3. Publication + Code and Data
+4. Linked, executable code and data
+5. Isolated computational environment (Docker, Binder, Quarto-live)
+
+---
+
+## Literate Programming: The Key
+
+**Concept by Knuth (1984):**
+- Interweaving natural language and code
+- Human-readable documentation
+- Code, output, and narrative in one document
+
+**Modern implementation:**
+- Quarto
+- R Markdown
+- Jupyter Notebooks
+
+---
+
+## Example: Quarto Document
+
+**Left side:** Markdown + Code blocks  
+**Right side:** Rendered document
+
+- Direct traceability from text to computation
+- Every coefficient traceable to its calculation
+- Automatic documentation of analytical decisions
+- Output in .docx, .pdf, .html, and more
+
+---
+
+## Benefits of Reproducible Reporting
+
+**For science:**
+- Error detection by reviewers and readers
+- Learning from methodological details
+- Building on previous work
+
+**For you:**
+- Better organized workflow
+- Easier to revise analyses
+- Documented decisions for future reference
+- Facilitates collaboration
+
+---
+
+## Computational Reproducibility
+
+**Problem:** Different software versions, operating systems
+
+**Solutions:**
+
+1. **Basic:** Provide code + data + session info
+2. **Better:** Use package management (renv, conda)
+3. **Best:** Containerization (Docker) or web-based execution (Quarto-live)
+
+---
+
+## Quarto-Live: Full Reproducibility
+
+**Three lines of code change:**
+
+```yaml
+format: live-html
+engine: knitr
+```
+
+**Result:**
+- Completely isolated computational environment
+- Accessible via browser
+- Executable via WebAssembly
+- No software installation needed
+- No version conflicts possible
+
+---
+
+# FAIR Data Management
+
+## Reproducibility Requires Access
+
+---
+
+## Reproducibility Enables Cumulative Science
+
+**Science is fundamentally cumulative (Merton 1973):**
+
+1. **Verification:** Can we reproduce the finding?
+2. **Extension:** Can we build on this work?
+3. **Integration:** Can we combine multiple studies?
+
+**Each step requires:**
+- Access to materials
+- Understanding of methods
+- Ability to reuse data and code
+
+---
+
+## The Cost of Non-Reproducibility
+
+**Artner et al. (2021) reproduction study:**
+- Attempted to reproduce 232 statistical claims from 46 articles
+- Investment: **280 person-days of work**
+- Success rate: Only **70%**
+
+**Their conclusion:** *"Vagueness makes assessing reproducibility a nightmare"*
+
+**The problem:** Inadequate documentation and data management
+
+---
+
+## FAIR as Systematic Solution
+
+**FAIR Principles provide structure for:**
+- Making research products discoverable
+- Ensuring long-term accessibility
+- Enabling technical compatibility
+- Supporting informed reuse
+
+**Not just "making data available" but making it systematically reusable**
+
+---
+
+## From Reproducible to Reusable
+
+**Reproducible reporting solves one problem:**
+- "Can I recreate your results with your data and code?"
+
+**But another problem remains:**
+- "Can I actually find and access your data and code?"
+- "Can I understand what your data contains?"
+- "Can I legally and practically reuse your materials?"
+
+**→ FAIR principles address these questions**
+
+---
+
+## Why FAIR Matters for Reproducibility
+
+**Real examples of reproducibility barriers:**
+
+- Stimulus materials posted but copyright unclear → Cannot reuse
+- Data available but no codebook → Cannot understand variables
+- Referenced data links broken → Cannot access
+- Authors left institution → Cannot locate materials
+
+**Availability alone ≠ Reproducibility**
+
+---
+
+## FAIR Principles
+
+- **F**indable
+- **A**ccessible
+- **I**nteroperable
+- **R**eusable
+
+Framework for systematic practices that enable reuse
+
+---
+
+## FAIR ≠ Open
+
+- FAIR does not necessarily mean "freely accessible"
+- Particularly relevant for vulnerable populations
+- Metadata remain publicly accessible
+- Access path transparently documented
+
+**Principle:** "As open as possible, as closed as necessary"
+
+---
+
+## Empirical Evidence for FAIR
+
+**Health research (Martínez-García et al. 2023):**
+- 56.6% time savings in research data management
+- Monthly savings: €16,800
+
+**Reproducibility study (Artner et al. 2021):**
+- 232 statistical claims from 46 articles
+- 280 person-days of work
+- Only 70% successfully reproduced
+
+---
+
+## F - Findable
+
+**Components:**
+
+1. Persistent, unique identifiers (DOIs)
+2. Rich metadata
+3. Indexing in searchable databases
+
+**Repositories:**
+- Zenodo.org
+- OSF.io
+- Research data centers (e.g., Verbund FDB)
+
+---
+
+## A - Accessible
+
+**Gradations:**
+
+- Freely available research products
+- Controlled access (private repositories)
+- Regulated access via research data centers
+
+**Important:** Transparent documentation of access path
+
+---
+
+## I - Interoperable
+
+**Use of standardized, open formats:**
+
+- Data: CSV with codebook, labeled .Rdata
+- Code: R, Python (not MPlus, STATA)
+- Avoiding proprietary software
+
+**Alternative open-source software:**
+- Jamovi, JASP (instead of SPSS)
+
+---
+
+## R - Reusable
+
+**Comprehensive documentation:**
+
+- Codebooks for each variable
+- README files
+- Terms of use and licensing information (CC0, CC-BY, CC-BY-SA)
+- Research context and framework
+- Data quality issues
+
+**Standards:** PSYCH-DS for psychological data
+
+---
+
+## FAIR in Educational Research
+
+**Good examples:**
+- National Educational Panel Study (NEPS)
+- PISA
+- PIRLS
+
+**Challenge:** Scalable approaches for smaller projects with limited resources
+
+---
+
+## Frequently Asked Questions
+
+---
+
+## "Reproducibility sounds time-consuming"
+
+**Answer:**
+
+**Initial investment:** Yes, there's a learning curve
+
+**Long-term benefits:**
+- Faster revisions (code is already there)
+- Easier collaboration (others can understand your work)
+- Better organized workflow
+- More citations and trust
+
+**Think incremental:** Start small, improve gradually
+
+---
+
+## "My code is messy and embarrassing"
+
+**Answer:**
+
+**The paradox of open code:**
+1. Knowing others will see it → You write better code
+2. Better code → Less error-prone, better documented
+3. Better documentation → Others can learn from it
+
+**Perfect is the enemy of good:** 
+Imperfect but documented code > No code at all
+
+---
+
+## "What about proprietary/sensitive data?"
+
+**Answer:**
+
+**FAIR ≠ Open:**
+- Metadata can be public even if data isn't
+- Controlled access is still FAIR
+- Document access procedures transparently
+
+**For educational research:**
+- "As open as possible, as closed as necessary"
+- Research data centers provide secure solutions
+- Synthetic data for methods illustration
+
+---
+
+## "I'll be scooped!"
+
+**Answer:**
+
+**Your advantages persist:**
+- Deep knowledge of your data and design
+- First-mover advantage in publication
+- Invitations to collaborate on reuse
+
+**Reframing:**
+- Reuse = validation of your work
+- Citations from secondary analyses
+- Broader impact of your research
+
+**Science as common good:** Collective progress benefits everyone
+
+---
+
+## Conclusion
+
+**Reproducibility is not optional—it's core to science:**
+- Verification of findings
+- Error detection and correction
+- Cumulative knowledge building
+
+**Two practical approaches:**
+
+1. **Reproducible Reporting** → Document your complete workflow
+2. **FAIR Data Management** → Enable systematic reuse
+
+**Result:** Stronger, more credible, more impactful research
+
+---
+
+## Take-Home Message
+
+**Reproducibility means:**
+
+- Publishing isn't complete without data and code
+- Documentation is as important as analysis
+- FAIR principles make reuse systematic, not accidental
+
+**Start today:**
+- Try literate programming for your next analysis
+- Deposit your next dataset with a DOI
+- Document one more step than you did last time
+
+**Perfect is the enemy of good—begin somewhere!** 💪
+
+---
+
+## Thank You for Your Attention!
+
+Questions?
+
+---
+
+## Key References
+
+- Artner et al. (2021). The reproducibility of statistical results in psychological research. *Psychological Methods*.
+- Peng (2011). Reproducible research in computing science. *Science*.
+- Wilkinson et al. (2016). The FAIR Guiding Principles. *Scientific Data*.
+- Hardwicke et al. (2018, 2021). Data availability and analytic reproducibility studies. *Royal Society Open Science*.
+
+Complete reference list available in the paper.
