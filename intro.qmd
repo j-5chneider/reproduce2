@@ -342,7 +342,7 @@ Framework for systematic practices that enable reuse
 
 **Use of standardized, open formats:**
 
-- Data: CSV with codebook, labeled .Rdata
+- Data: CSV with codebook, labeled .Rdata, ODF
 - Code: R, Python (not MPlus, STATA)
 - Avoiding proprietary software
 
